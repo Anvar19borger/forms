@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Dobovlenie novogo produckta</h2>
+    <form method="post">
+        <label>
+            <p>Nasvanie produkta:</p>
+            <input type="text" name="produckt_name" placeholder="Belik..">
+        </label>
+        <label >
+            <p>Preis</p>
+            <input type="number" min="0" name="price" placeholder="10 000">
+        </label>
+        <label >
+            <p>Kol-vo</p>
+            <input type="number" min="0" max="10" name=" count" placeholder="Ne bolsche 10">
+        </label>
+        <label>
+            <p>Katigorija</p>
+            <select name="catigory" >
+                <option value="sport">sport</option>
+                <option value="hous">dacha</option>
+                <option value="home">dom</option>
+                <option value="hobby">hobi</option>
+                <option value="gift">podarki</option>
+            </select>
+        </label>
+        <label>
+            <p>Opisanie:</p>
+            <textarea name="description" placeholder="Raskajite pro tavar."></textarea>
+        </label>
+        <button>Otpravit</button>
+    </form>
+
+   <h2>Forma autentifikacii </h2>
+        <label>
+            <p>Login</p>
+            <input type="" name="name" placeholder="Ukajite imja">
+        </label>
+        <label>
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Ukajite parol">
+        </label>
+        <button>Vvod</button>
+    </form>
+    <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <input type="text" name="title" placeholder="title">
+        <input type="text" name="body" placeholder="body">
+        <input type="number" name="userId" placeholder="userId">
+        <button>Otpravit</button>
+
+    </form>
+</body>
+</html>
+
+<!-- создать форму аутентификации 
+        у данной формы должны быть два поля ввода (логин и пароль)
+        и кнопка отправки формы -->
